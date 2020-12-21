@@ -42,8 +42,8 @@ axios.interceptors.request.use(function (config) {
 
 
 let host = 'http://shop.projectsedu.com';
-//let localhost = 'http://47.93.91.115:7418';
-let localhost = 'http://127.0.0.1:8500';
+let localhost = 'http://47.93.91.115:7418';
+// let localhost = 'http://127.0.0.1:8000';
 //let localhost = 'http://192.168.5.223:8000';
 //let localhost = 'https://staging-stcsm-svr.marketbox.cn'
 
@@ -98,7 +98,7 @@ export const Testcors = params => {
 
 //上次XLS文件
 export const UploadXLSFile = formData => {
-    return axios.post(`${localhost}/import/`, formData, {headers: {'Content-Type': 'multipart/form-data'}})
+    return axios.post(`${localhost}/module/calcuate/upload/`, formData, {headers: {'Content-Type': 'multipart/form-data'}})
 };
 
 //上次XLS文件
